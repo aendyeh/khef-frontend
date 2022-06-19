@@ -7,37 +7,7 @@
     }
   }
 
-  .actions-container {   
-    text-align: center;
-
-    input {
-      display: block;
-      margin: auto;
-      width: 90%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-
-      &::-webkit-input-placeholder {
-        text-align: center;
-      }
-      
-      &:-moz-placeholder { /* Firefox 18- */
-          text-align: center;  
-      }
-      
-      &::-moz-placeholder {  /* Firefox 19+ */
-          text-align: center;  
-      }
-      
-      &:-ms-input-placeholder {  
-          text-align: center; 
-      }
-    }
-    
-    button {
-      padding: 0 30px;
-    }
-    
+  .actions-container {       
     hr {
       border: none;
       border-top: 3px dotted lightgray;
