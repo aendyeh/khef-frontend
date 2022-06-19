@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import Search from './Search';
 import './StartPage.scss'
 
 function StartPage() {
@@ -14,12 +15,7 @@ function StartPage() {
         <img src='assets/img/khef-logo.png' alt='Khef logo' />
       </div>
       <div className='actions-container'>
-        <div className='search-container'>
-          <form name='search' onSubmit={() => handleSubmit()}>
-            <input type='text' placeholder='Find by ingredient(s)' />
-            <button type='submit'>Find</button>
-          </form>
-        </div>
+        <Search onSubmit={handleSubmit} />
         <hr />
         <div className='browse-container'>
           <span>browse by</span>
