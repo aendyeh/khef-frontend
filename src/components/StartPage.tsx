@@ -13,7 +13,11 @@ function StartPage() {
         </div>
         <hr />
         <div className='browse-container'>
-          <span>or <span>browse</span></span>
+          <span>browse by</span>
+          <ul>
+            <li>type</li>
+            <li>ingredient</li>
+          </ul>
         </div>
       </div>
     </div>
