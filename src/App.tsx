@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.scss';
-import NavigablePage from './components/NavigablePage';
+import BrowsePage from './components/BrowsePage';
 import RecipePage from './components/RecipePage';
 import StartPage from './components/StartPage';
 
@@ -12,7 +12,7 @@ function App() {
           <Route index element={<StartPage />} />
         </Route>
         <Route path='/browse'>
-          <Route index element={<NavigablePage />} />
+          <Route index element={<BrowsePage />} />
         </Route>
 
         <Route path='/recipe/:id' element={<RecipePage />} />
