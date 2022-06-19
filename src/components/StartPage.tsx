@@ -8,7 +8,7 @@ function StartPage() {
       </div>
       <div className='actions-container'>
         <div className='search-container'>
-          <form>
+          <form name='search'>
             <input type='text' placeholder='Find by ingredient(s)' />
             <button type='submit'>Find</button>
           </form>
