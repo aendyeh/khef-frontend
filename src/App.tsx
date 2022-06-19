@@ -1,5 +1,6 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.scss';
+import NavigablePage from './components/NavigablePage';
 import StartPage from './components/StartPage';
 
 function App() {
@@ -10,8 +11,10 @@ function App() {
           <Route index element={<StartPage />} />
         </Route>
         <Route path='/browse'>
-          <Route index element={<div>Hello!</div>} />
+          <Route index element={<NavigablePage />} />
         </Route>
+
+        <Route path='*' element={<Navigate to={'/'} />} />
       </Routes>
     </div>
   );
