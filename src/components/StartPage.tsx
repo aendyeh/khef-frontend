@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Search from './shared/Search';
 import './StartPage.scss'
 
@@ -18,11 +18,7 @@ function StartPage() {
         <Search onSubmit={handleSubmit} />
         <hr />
         <div className='browse-container'>
-          <span>browse by</span>
-          <ul>
-            <li>type</li>
-            <li>ingredient</li>
-          </ul>
+          <span>or <Link to={'/browse'}>browse</Link></span>
         </div>
       </div>
     </div>
