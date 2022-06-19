@@ -1,5 +1,32 @@
 .start-page-container {
-  input {
-    display: block;
+  margin: 0 20px;
+
+  .logo-container {
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .actions-container {   
+    text-align: center;
+
+    input {
+      display: block;
+      margin: auto;
+      width: 90%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    
+    button {
+      
+    }
+    
+    hr {
+      border: none;
+      border-top: 3px dotted lightgray;
+      margin: 20px 0;
+    }
   }
 }
