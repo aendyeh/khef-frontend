@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import Search from './Search';
+import Search from './shared/Search';
 import './StartPage.scss'
 
 function StartPage() {
