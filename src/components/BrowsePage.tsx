@@ -6,7 +6,16 @@ import './BrowsePage.scss'
 
 function BrowsePage() {
   function pillItems() {
-    return []
+    return [{
+      text: "Main",
+      isActive: true
+    }, {
+      text: "Breakfast",
+      isActive: false
+    }, {
+      text: "Side",
+      isActive: false
+    }, ]
   }
 
   function recipes(): any[] {
@@ -24,6 +33,7 @@ function BrowsePage() {
   return (
     <article className="browsable-content">
       <Search onSubmit={() => console.warn("TODO")} hasButton={false} />
+      Filter:
       <Pills items={pillItems()} />
       <h1>Results</h1>
 
