@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import Pills from "./shared/Pills"
 import RecipeItem from "./shared/RecipeItem"
 import Search from "./shared/Search"
+import './BrowsePage.scss'
 
 function BrowsePage() {
   function pillItems() {
