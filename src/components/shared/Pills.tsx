@@ -10,7 +10,7 @@ type IndividualProps = {
 function Pills({ items }: CollectiveProps) {
   return (
     <> {
-      items.map(item => <Pill text={item.text} isActive={item.isActive} />)
+      items.map(item => <Pill key={item.text} text={item.text} isActive={item.isActive} />)
     }</>
   )
 }

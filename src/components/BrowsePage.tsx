@@ -38,7 +38,7 @@ function BrowsePage() {
       <h1>Results</h1>
 
       {recipes().map(rec => (
-        <Link to={`/recipe/${rec.id}`}>
+        <Link key={rec.id} to={`/recipe/${rec.id}`}>
           <RecipeItem item={rec} />
         </Link>
       ))}
