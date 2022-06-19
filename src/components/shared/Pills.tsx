@@ -1,3 +1,5 @@
+import './Pills.scss'
+
 type CollectiveProps = {
   items: IndividualProps[]
 }
@@ -9,15 +11,15 @@ type IndividualProps = {
 
 function Pills({ items }: CollectiveProps) {
   return (
-    <> {
+    <div className='pills-container'> {
       items.map(item => <Pill key={item.text} text={item.text} isActive={item.isActive} />)
-    }</>
+    }</div>
   )
 }
 
 function Pill({ text, isActive }: IndividualProps) {
   return (
-    <div data-active={isActive}>{text}</div>
+    <div className='pill' data-active={isActive}>{text}</div>
   )
 }
 

@@ -33,8 +33,10 @@ function BrowsePage() {
   return (
     <article className="browsable-content">
       <Search onSubmit={() => console.warn("TODO")} hasButton={false} />
-      Filter:
+
+      Type:
       <Pills items={pillItems()} />
+
       <h1>Results</h1>
 
       {recipes().map(rec => (
