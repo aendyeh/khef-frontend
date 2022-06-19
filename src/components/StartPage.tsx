@@ -1,6 +1,13 @@
+import { useNavigate } from 'react-router-dom';
 import './StartPage.scss'
 
 function StartPage() {
+  const navigate = useNavigate();
+
+  function handleSubmit() {
+    navigate('/browse?foo=bar')
+  }
+
   return (
     <div className='start-page-container'>
       <div className='logo-container'>
@@ -8,7 +15,7 @@ function StartPage() {
       </div>
       <div className='actions-container'>
         <div className='search-container'>
-          <form name='search'>
+          <form name='search' onSubmit={() => handleSubmit()}>
             <input type='text' placeholder='Find by ingredient(s)' />
             <button type='submit'>Find</button>
           </form>
