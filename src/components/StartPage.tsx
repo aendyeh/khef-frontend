@@ -1,3 +1,5 @@
+import './StartPage.scss'
+
 function StartPage() {
   return (
     <div className='start-page-container'>
