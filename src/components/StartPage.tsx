@@ -8,8 +8,10 @@ function StartPage() {
       </div>
       <div className='actions-container'>
         <div className='search-container'>
-          <input type='text' placeholder='Find by ingredient(s)' />
-          <button type='submit'>Find</button>
+          <form>
+            <input type='text' placeholder='Find by ingredient(s)' />
+            <button type='submit'>Find</button>
+          </form>
         </div>
         <hr />
         <div className='browse-container'>
